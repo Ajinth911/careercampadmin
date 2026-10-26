@@ -33,7 +33,15 @@ export default function Navbar({ currentPath, onNavigate }) {
           Registration
         </button>
 
-        {isAuthenticated ? (
+        {!isAuthenticated ? (
+          <button
+            type="button"
+            className={`nav-link ${currentPath.startsWith("/admin") ? "active" : ""}`}
+            onClick={() => onNavigate("/admin/login")}
+          >
+            Admin Portal
+          </button>
+        ) : (
           <>
             <button
               type="button"
@@ -61,7 +69,7 @@ export default function Navbar({ currentPath, onNavigate }) {
               Sign Out
             </button>
           </>
-        ) : null}
+        )}
       </nav>
     </header>
   );
