@@ -1,0 +1,125 @@
+.login-page-container {
+  max-width: 440px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.login-card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border-primary);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.login-brand-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-top: 4px;
+}
+
+.login-subtitle {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.login-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.login-input {
+  padding: 10px 14px;
+  border: 1px solid var(--color-border-primary);
+  background-color: var(--color-bg-primary);
+  font-size: 14px;
+  color: var(--color-text-primary);
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: var(--color-border-dark);
+}
+
+.login-error-alert {
+  padding: 12px 14px;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.btn-login-submit {
+  padding: 12px;
+  background-color: var(--color-button-primary-bg);
+  color: var(--color-button-primary-text);
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid var(--color-button-primary-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.btn-login-submit:hover:not(:disabled) {
+  background-color: var(--color-button-primary-hover);
+}
+
+.btn-login-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-demo-helper {
+  margin-top: 24px;
+  padding: 14px;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-subtle);
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.demo-fill-btn {
+  margin-top: 8px;
+  padding: 4px 8px;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border-primary);
+  font-size: 11px;
+  font-weight: 600;
+  color: #111111;
+  display: block;
+}
+
+.demo-fill-btn:hover {
+  background-color: #f4f4f5;
+}

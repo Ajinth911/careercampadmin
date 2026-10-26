@@ -1,0 +1,105 @@
+.scanner-page-container {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.scanner-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border-primary);
+  padding-bottom: 16px;
+}
+
+.scanner-page-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-text-primary);
+}
+
+.scanner-page-subtitle {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.btn-back-dashboard {
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border-primary);
+  color: var(--color-text-primary);
+}
+
+.btn-back-dashboard:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+/* Recent Scans Session Log */
+.recent-scans-card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border-primary);
+  padding: 20px;
+}
+
+.recent-scans-header {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recent-scans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recent-scan-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-subtle);
+  font-size: 13px;
+}
+
+.recent-scan-item.success {
+  border-left: 3px solid #166534;
+}
+
+.recent-scan-item.warning {
+  border-left: 3px solid #b45309;
+}
+
+.recent-scan-item.error {
+  border-left: 3px solid #991b1b;
+}
+
+.scan-item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.scan-item-name {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.scan-item-id {
+  font-family: var(--font-family-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.scan-item-status {
+  font-weight: 600;
+  font-size: 12px;
+}
